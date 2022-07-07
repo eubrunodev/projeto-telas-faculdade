@@ -194,10 +194,10 @@
                     <input type="email" placeholder="e-mail">
                     <input type="password" placeholder="senha">
                     <br>
-                    <input type="checkbox" name="" id="checkbox" class="checkbox">
-                    <label for="">Lembrar-me</label> <br>
-                    <label for="">Ainda não possui uma conta?</label> 
-                    <a href="#">Cadastre-se</a> <br>
+                    <input type="checkbox" id="lembrar-box">
+                    <label for="lembrar-box">Lembrar-me</label> <br>
+                    <label for="cadastrar-link">Ainda não possui uma conta?</label> 
+                    <a href="#" id="cadastrar-link">Cadastre-se</a> <br>
                     <button type="submit" id="">Entrar</button>
                 </form>
                 <form action="" class="form-senha">
@@ -212,4 +212,22 @@
         <p>Todos os direitos Reservados &reg;</p>
     </footer>
 </body>
+<script>
+    // obs: Tivemos que fazer um sistema qualquer utilizando Jquery, então só fiz essa simulação de autenticação
+    $(document).ready(function() {
+        $('.form-autenticar #botao').on('click', function() {
+            var email = $('#email').val();
+            var senha = $('#senha').val();
+            var lembrar = document.getElementById('lembrar-box');
+
+            if(email === "bruno@gmail.com" && senha === "123" && lembrar.checked == true){
+                alert("Usuário Autenticado e Senha salva, com sucesso.");
+            } else if (email === "bruno@gmail.com" && senha === "123"){
+                alert("Usuário Autenticado, com sucesso.");
+            } else {
+                return;
+            }
+        });
+    });
+</script>
 </html>
