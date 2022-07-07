@@ -4,108 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!---IMPORTANDO O JQUERY-->
+    <title>Atividade Mapa</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: 'Noto Sans', sans-serif;
+        background: #f7fffe;
+    }
+    header{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        height: 50px;
+    }
+    .rascunho-header{
+        margin-top: 50px;
+        color: white;
+        height: 25px;
+        text-align: center;
+        background-color: black;
+    }
+    .telas-header {
+        margin-top: 40px;
+        color: white;
+        height: 25px;
+        text-align: center;
+        background-color: blak;
+    }
+    input[type='text']{
+        display: block;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 90%;
+        outline: 0;
+        border-color: black;
+    }
+    input[type='email']{
+        display:block;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 90%;
+        outline: 0;
+        border-color: black;
+    }
+    input[type='password']{
+        display:block;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 90%;
+        outline: 0;
+        border-color: black;
+    }
+    form > h2 {
+        text-align: center;
+        padding: 10px;
+    }
+    .rascunho-forms{
+        display: flex;
+        margin-left: 15%;
+    }
+    .rascunho-forms > form {
+        background: gray;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        box-shadow: 5px 1px 5px black;
+    }
+    .form-senha {
+        height: 50%;
+    }
+    button{
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+    button:hover {
+        background-color: rgb(246, 255, 0);
+        border-style: none;
+        color: black;
+    }
+
+    /* Estilização das telas */
+    .telas-forms {
+        display: flex;
+        margin-left: 15%;
+    }
+    .telas-forms > form {
+        background-color: rgb(252, 175, 33);
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 8px;
+        box-shadow: 8px 4px 30px black;
+    }
+    .form-autenticar > a{
+        color: rgb(23, 4, 118);
+    }
+    .form-autenticar > a:hover{
+        color: white;
+    }
+    .cadastrar-form {
+        width: 300px;
+    }
+
+
+    .footer{
+		text-align: center;
+		text-decoration: none;
+		font-size: 12px;
+        background-color: black;
+        color: white;
+        margin-top: 50px;
+        padding: 10px;
+		font-weight: bold;
+    }
+</style>
 <body>
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-		body{
-			font-family: 'Noto Sans', sans-serif;
-			margin: 0;
-		}
-		header{
-			background-color: #166087;
-			text-align: center;
-			padding: 3px;
-			font-size: 20px;
-			color: #fff;
-		}
-
-		h3{
-			text-decoration: underline;
-		}
-
-
-		.md51-section{
-			margin: 3rem;
-		}
-		.md51-title{
-			background: #85d4ff;
-			padding: 10px;
-			border-radius: 5px;
-		}
-		.md51-div{
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-		}
-
-		.md52-section{
-			margin: 3rem;
-		}
-		.md52-title{
-			background: #85d4ff;
-			padding: 10px;
-			border-radius: 5px;
-		}
-		.md52-div{
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-		}
-
-		.footer{
-			text-align: center;
-			text-decoration: none;
-			font-size: .75rem;
-			padding: .75rem;
-			font-weight: bold;
-		}
-	</style>
-	
     <header>
-        <h1 class="header-title">Lista de disciplinas por módulo</h1>
+        <h1>ATIVIDADE MAPA</h1>
     </header>
-	
     <main>
-        <section class="md51-section">
-			<article>
-				<h1 class="md51-title">Módulo 51</h1>
-				<p>Periodo: 21/02/2022 a 29/04/2022</p>
-				<div class="md51-div">
-					<div> 
-						<h3>Design Gráfico</h3>
-						<p>Nessa matéria, temos diversas técnicas para criar peças gráficas e audiovisuais, desenvolver identidade visual ou ainda elaborar o projeto de comunicação de uma empresa e/ou organização.</p>
-					</div> 
-					<div> 
-						<h3>Formação Sociocultural  e Ética I</h3>
-						<p>O principal objetivo é aperfeiçoar habilidades e estratégias de leitura fundamentais para seu desempenho pessoal, acadêmico e profissional.</p>
-					</div>
-					<div> 
-						<h3>Fundamentos de Redes de Computadores</h3>
-						<p>Estudamos como os computadores são organizados na rede e quais tarefas são designadas a eles.</p>
-					</div>
-				</div>
-			</article>
+        <section class="rascunhos">
+            <header class="rascunho-header">
+                <h1 style="text-align: center;">RASCUNHOS</h1>
+            </header>
+            <div class="rascunho-forms">
+                <form action="">
+                    <h2>Cadastro</h2>
+                    <input type="text" id="nome" placeholder="nome">
+                    <input type="password" placeholder="senha">
+                    <input type="email" placeholder="e-mail">
+                    <button type="submit" id="cadastrar">Cadastrar</button>
+                    <p id="msg"></p>
+                </form>
+                <form action="">
+                    <h2>Autenticação</h2>
+                    <input type="email" placeholder="e-mail">
+                    <input type="password" placeholder="senha">
+                    <br>
+                    <input type="checkbox" name="" id="checkbox" class="checkbox">
+                    <label for="">Lembrar-me</label> <br>
+                    <label for="">Ainda não possui uma conta?</label> 
+                    <a href="#">Cadastre-se</a> <br>
+                    <button type="submit" id="">Entrar</button>
+                </form>
+                <form action="" class="form-senha">
+                    <h2>Salvar Senha</h2>
+                    <input type="email" placeholder="e-mail">
+                    <button type="submit" id="">Salvar</button>
+                </form>
+            </div>
         </section>
 
-        <section class="md52-section">
-			<article>
-				<h1 class="md52-title">Módulo 52</h1>
-				<p>Periodo: 02/05/2022 a 08/07/2022</p>
-				<div class="md52-div">
-					<div> 
-					  <h3>Estrutura de Dados I</h3>
-					  <p>Essa matéria estuda os diversos mecanismos de organização de dados para atender aos diferentes requisitos de processamento. As estruturas de dados definem a organização, métodos de acesso e opções de processamento para a informação manipulada pelo programa.</p>
-					</div>
-					<div>
-					  <h3>Programação front-end</h3>
-					  <p>Nesta matéria, veremos sobre a sintaxe do HTML5, Estilização com CSS e também veremos um pouco de Jquery.</p>
-					</div>
-				</div>
-			</article>
+        <section class="telas">
+            <header class="telas-header">
+                <h1>TELAS</h1>
+            </header>
+            <div class="telas-forms">
+                <form action="" class="cadastrar-form">
+                    <h2>Cadastro</h2>
+                    <input type="text" id="nome" placeholder="nome">
+                    <input type="password" placeholder="senha">
+                    <input type="email" placeholder="e-mail">
+                    <button type="submit" id="cadastrar">Cadastrar</button>
+                    <p id="msg"></p>
+                </form>
+                <form action="" class="form-autenticar">
+                    <h2>Autenticação</h2>
+                    <input type="email" placeholder="e-mail">
+                    <input type="password" placeholder="senha">
+                    <br>
+                    <input type="checkbox" name="" id="checkbox" class="checkbox">
+                    <label for="">Lembrar-me</label> <br>
+                    <label for="">Ainda não possui uma conta?</label> 
+                    <a href="#">Cadastre-se</a> <br>
+                    <button type="submit" id="">Entrar</button>
+                </form>
+                <form action="" class="form-senha">
+                    <h2>Salvar Senha</h2>
+                    <input type="email" placeholder="e-mail">
+                    <button type="submit" id="">Salvar</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <p>Todos os direitos Reservados &reg;</p>
+        <p>Todos os direitos Reservados &reg; <br> Bruno Peniani Martins | RA:21074208-5</p>
     </footer>
 </body>
 </html>
