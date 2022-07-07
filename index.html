@@ -181,29 +181,29 @@
                 <h1>TELAS</h1>
             </header>
             <div class="telas-forms">
-                <form action="" class="cadastrar-form">
+                <form action="" class="cadastrar-form" autocomplete="off">
                     <h2>Cadastro</h2>
-                    <input type="text" id="nome" placeholder="nome">
-                    <input type="password" placeholder="senha">
-                    <input type="email" placeholder="e-mail">
-                    <button type="submit" id="cadastrar">Cadastrar</button>
+                    <input type="text" id="nome" placeholder="nome" required>
+                    <input type="password" placeholder="senha" required>
+                    <input type="email" placeholder="e-mail" required>
+                    <button type="submit">Cadastrar</button>
                     <p id="msg"></p>
                 </form>
-                <form action="" class="form-autenticar">
+                <form action="" class="form-autenticar" autocomplete="off">
                     <h2>Autenticação</h2>
-                    <input type="email" placeholder="e-mail">
-                    <input type="password" placeholder="senha">
+                    <input type="email" id="email" placeholder="e-mail" required>
+                    <input type="password" id="senha" placeholder="senha" required>
                     <br>
-                    <input type="checkbox" id="lembrar-box">
+                    <input type="checkbox" id="lembrar-box" class="checkbox">
                     <label for="lembrar-box">Lembrar-me</label> <br>
-                    <label for="cadastrar-link">Ainda não possui uma conta?</label> 
-                    <a href="#" id="cadastrar-link">Cadastre-se</a> <br>
-                    <button type="submit" id="">Entrar</button>
+                    <label for="">Ainda não possui uma conta?</label> 
+                    <a href="#">Cadastre-se</a> <br>
+                    <button type="submit" id="botao">Entrar</button>
                 </form>
                 <form action="" class="form-senha">
                     <h2>Salvar Senha</h2>
-                    <input type="email" placeholder="e-mail">
-                    <button type="submit" id="">Salvar</button>
+                    <input type="email" placeholder="e-mail" required>
+                    <button type="submit">Salvar</button>
                 </form>
             </div>
         </section>
